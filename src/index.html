@@ -1,0 +1,54 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EU Digital Covid Certificate</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+
+  <div class="columns is-mobile">
+    <div class="column is-three-fifths is-offset-one-fifth">
+        <div class="field">
+          <label class="label">Enter EU DCC Qr Payload : </label>
+          <div class="control">
+            <textarea class="textarea" placeholder="HC1:.." id="qr" autofocus="autofocus" ></textarea>
+          </div>
+        </div>
+        <section class="section">
+          <h1 class="title">Base45:</h1>
+          <div class="card">
+            <div class="card-content">
+              <div class="content table-container" id="qrBase45"></div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <h1 class="title">Compressed:</h1>
+          <div class="card">
+            <div class="card-content">
+              <div class="content table-container" id="compressed"></div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <h1 class="title">COSE:</h1>
+          <div class="card">
+            <div class="card-content">
+              <div class="content table-container" id="cose"></div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <h1 class="title">CBOR:</h1>
+          <div class="card">
+            <div class="card-content">
+              <div class="content table-container" id="cbor"></div>
+            </div>
+          </div>
+        </section>
+    </div>
+  </div>
+  <script src="./index.ts"></script>
+</body>
+</html>
